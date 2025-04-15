@@ -29,7 +29,7 @@ def click_checkbox(wait, index):
 
 url = "https://docs.google.com/forms/d/1-CAARECzVdbPQh2Is88dso7WHCfc4Jw3vSdMwT8ttag/viewform?edit_requested=true"
 
-for _ in range(50):
+for _ in range(89):
     options = webdriver.ChromeOptions()
     options.add_argument("no-sandbox")
     options.add_argument("--disable-gpu")
@@ -41,7 +41,7 @@ for _ in range(50):
     wait = WebDriverWait(driver, 20)
 
     # Q1 - Age: 1-4
-    click_radio(wait, getrand(1, 2))
+    click_radio(wait, getrand(1,2))
 
 
 
